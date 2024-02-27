@@ -1,0 +1,3 @@
+- If-else
+- Switch-case
+- Ternary operator
