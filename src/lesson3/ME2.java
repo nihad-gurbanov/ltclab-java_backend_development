@@ -1,6 +1,6 @@
 package lesson3;
 
-public class RandomStatus {
+public class ME2 {
     public static void main(String[] args) {
         int randInt = (int) (Math.random() * 100);
 
