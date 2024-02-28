@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ScoreGrader0 {
     public static void main(String[] args) {
+        while (true) {
         System.out.println("Enter your score:");
         Scanner scanner = new Scanner(System.in);
         int score = scanner.nextInt();
@@ -32,6 +33,7 @@ public class ScoreGrader0 {
                 break;
         }
         System.out.println(output);
+        }
 
         /*
         * output = switch (adjustedScore) {
