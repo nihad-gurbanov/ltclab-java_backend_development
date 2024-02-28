@@ -2,7 +2,7 @@ package lesson4;
 
 import java.util.Scanner;
 
-public class ScoreGradeConverter {
+public class ScoreGrader0 {
     public static void main(String[] args) {
         System.out.println("Enter your score:");
         Scanner scanner = new Scanner(System.in);
@@ -12,24 +12,34 @@ public class ScoreGradeConverter {
             System.out.println("Score must be between 0 and 100");
             return;
         }
-
+        String output = "";
         int adjustedScore = (score - 1) / 10;
         switch (adjustedScore) {
             case 9:
-                System.out.println(score + " is A");
+                output = score + " is A";
                 break;
             case 8:
-                System.out.println(score + " is B");
+                output = score + " is B";
                 break;
             case 7:
-                System.out.println(score + " is C");
+                output = score + " is C";
                 break;
             case 6:
-                System.out.println(score + " is D");
+                output = score + " is D";
                 break;
-            case 5, 4, 3, 2, 1, 0:
-                System.out.println(score + " is F");
+            default:
+                output = score + " is F";
                 break;
         }
+        System.out.println(output);
+
+        /*
+        * output = switch (adjustedScore) {
+            case 9 -> score + " is A";
+            case 8 -> score + " is B";
+            case 7 -> score + " is C";
+            case 6 -> score + " is D";
+            default -> score + " is F";
+        };*/
     }
 }
