@@ -15,9 +15,11 @@ public class GroceryList {
 
         String[] groceryList = items.split(" ");
 
-        System.out.println("🥜🫘🍞🍆 Grocery List:");
+        System.out.println("Grocery List:\n🥜🫘🍞🍆🍉🍊🍌");
         for (String product: groceryList) {
             System.out.println(product);
         }
+        System.out.println("🥜🫘🍞🍆🍉🍊🍌");
+
     }
 }
