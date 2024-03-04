@@ -1,0 +1,4 @@
+- Declaration, int of arrays
+- Memory works for array
+- Single dimensional Arrays
+- Foreach

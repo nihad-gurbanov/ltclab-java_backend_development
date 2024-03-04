@@ -4,10 +4,11 @@ public class SumEvens {
     public static void main(String[] args) {
         int sum = 0;
 
-        int value = 0;
-        while (value <= 100) {
-            sum += value;
-            value += 2;
+        int start = 0;
+        int stop = 100;
+        while (start <= stop) {
+            sum += start;
+            start += 2;
         }
         System.out.println("Sum of numbers from 1 to 100 is: " + sum);
 
