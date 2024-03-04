@@ -2,6 +2,9 @@ package lesson6;
 
 public class RandomArray {
     public static void main(String[] args) {
+        /*Generate 10 random numbers and store in an array.
+        Print the largest number*/
+
         int[] randomArray = new int[10];
 
         for (int i = 0; i < 10; i++) {
