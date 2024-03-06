@@ -13,6 +13,8 @@ public class RandomAvg {
             int randInt = random.nextInt(100);
             array[i] = randInt;
         }
+        // extra 1: Sort array from asc do desc
+        Arrays.sort(array);
         for(int item : array) {
             avg += item;
         }
