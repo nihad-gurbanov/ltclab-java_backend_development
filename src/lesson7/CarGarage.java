@@ -1,3 +1,5 @@
+package lesson7;
+
 import java.util.Scanner;
 
 public class CarGarage {
@@ -55,6 +57,8 @@ public class CarGarage {
                         carGarage[order - 1][1] = details[1];
                         carGarage[order - 1][2] = details[2];
                         System.out.println("Car parked successfully!");
+
+
                     }
                 } else {
                     System.out.println("Invalid space number or space is not empty.");
