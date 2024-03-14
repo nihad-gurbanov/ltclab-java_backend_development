@@ -8,13 +8,13 @@ public class Packer {
          * compare given and required packs
          * */
 
-        int bigPackSize = 5;
-        int smallPackSize = 1;
+        int bigPackSize = 5; //kgs
+        int smallPackSize = 1; //kg
 
-        int needBigPack = totalWeight / bigPackSize;
-        int needSmallPack = totalWeight %  5 / smallPackSize;
+        int requiredBigPack = totalWeight / bigPackSize;
+        int requiredSmallPack = (totalWeight %  bigPackSize) / smallPackSize;
 
-        int totalNeededPack = needSmallPack + needBigPack;
+        int totalNeededPack = requiredSmallPack + requiredBigPack;
         int totalGivenPack = bigPack + smallPack;
         boolean success = true;
 
