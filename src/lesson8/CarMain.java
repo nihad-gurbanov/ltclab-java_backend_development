@@ -1,12 +1,8 @@
 package lesson8;
 
-public class CarClass {
-    String make;
-    String model;
-    int year;
-
+public class CarMain {
     public static void main(String[] args) {
-        CarClass car1 = new CarClass();
+        Car car1 = new Car();
 
         car1.make = "Toyota";
         car1.model = "Camry";

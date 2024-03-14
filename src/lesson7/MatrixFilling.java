@@ -14,7 +14,7 @@ public class MatrixFilling {
             String userInput = scanner.nextLine();
 
             System.out.println(
-                    "Enter coordinates, both must be between 0 and 3 ex 1, 2");
+                    "Enter coordinates, both must be between 0 and 3 ex 1 2");
             String[] coordinates = scanner.nextLine().split(" ");
             if (array[Integer.parseInt(coordinates[0])][Integer.parseInt(coordinates[1])] == null) {
                 array[Integer.parseInt(coordinates[0])][Integer.parseInt(coordinates[1])] = userInput;
