@@ -25,7 +25,7 @@ public class Packer {
         }
         return success;
 
-//        Solution with ternary operator
+//        Solution with ternary operator.
 
 //        return (bigPack < 0 || smallPack < 0 || totalWeight < 0) ? !success :
 //                (totalGivenPack < totalNeededPack) != success;
