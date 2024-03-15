@@ -11,16 +11,16 @@ public class Packer {
         int bigPackSize = 5; //kgs
         int smallPackSize = 1; //kg
 
-        int requiredBigPack = totalWeight / bigPackSize;
-        int requiredSmallPack = (totalWeight %  bigPackSize) / smallPackSize;
+        int requiredBigPack = totalWeight / bigPackSize; // 12 / 5 = 2
+        int requiredSmallPack = (totalWeight %  bigPackSize) / smallPackSize; // 12 % 5 / 1 = 2
 
-        int totalNeededPack = requiredSmallPack + requiredBigPack;
+        int totalRequiredPack = requiredSmallPack + requiredBigPack;
         int totalGivenPack = bigPack + smallPack;
         boolean success = true;
 
         if (bigPack < 0 || smallPack < 0 || totalWeight < 0){
             return !success;
-        } else if (totalGivenPack < totalNeededPack) {
+        } else if (totalGivenPack < totalRequiredPack) {
             return !success;
         }
         return success;
@@ -29,5 +29,6 @@ public class Packer {
 
 //        return (bigPack < 0 || smallPack < 0 || totalWeight < 0) ? !success :
 //                (totalGivenPack < totalNeededPack) != success;
+
     }
 }
