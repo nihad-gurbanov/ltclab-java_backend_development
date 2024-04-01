@@ -15,10 +15,10 @@ public class FullNameConcatenation {
         String lastName = scanner.nextLine();
 
         // Concatenate the first name and last name to create the full name
-        String fullName = firstName + " " + lastName;
+        String fullName = firstName.concat(" ").concat(lastName);
 
         // Display the full name to the user
-        System.out.println("Your full name is: " + fullName);
+        System.out.println("Your full name is: ".concat(fullName));
 
         scanner.close();
     }
