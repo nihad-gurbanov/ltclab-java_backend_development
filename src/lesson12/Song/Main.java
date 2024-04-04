@@ -7,7 +7,7 @@ public class Main {
         Song s1 = new Song("Michael Jackson", "Smooth Criminal", 565);
         Song s2 = new Song("Michael Jackson", "Billie Jean", 297);
         Song s3 = new Song("Michael Jackson", "Beat it", 258);
-        Song s4 = new Song("Michael Jackson", "Artist", 357);
+        Song s4 = new Song("Michael Jackson", "Artist", 357); // full
 
         Playlist michael = new Playlist("Michael Jackson");
         System.out.println("\nAdding songs...");

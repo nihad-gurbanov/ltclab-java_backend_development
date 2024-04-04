@@ -42,7 +42,7 @@ public class Playlist {
     }
 
     public void displaySongs() {
-        for( Song item : songs) {
+        for(Song item : songs) {
             System.out.println(item.toString());
         }
     }
