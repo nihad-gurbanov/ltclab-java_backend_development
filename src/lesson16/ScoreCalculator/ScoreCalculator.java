@@ -3,21 +3,24 @@ package lesson16.ScoreCalculator;
 import java.util.Scanner;
 
 public class ScoreCalculator {
-    int studentCount;
-    double totalScore;
-    double averageScore;
+    private final int studentCount;
+    private final String[] scores;
+    private double averageScore;
 
-    public ScoreCalculator(int studentCount, double totalScore) {
+    public ScoreCalculator(int studentCount, String scores) {
         this.studentCount = studentCount;
-        this.totalScore = totalScore;
+        this.scores = scores.split(" ");
     }
 
-    public double averageScore() {
-        try {
-            averageScore = totalScore / studentCount;
-        } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
+    public double averageScore() throws InputCountException {
+        if (studentCount != scores.length) {
+            throw new InputCountException("Student and score count doesn't match!");
         }
+        double totalScore = 0;
+        for (String s : scores) {
+            totalScore += Integer.parseInt(s);
+        }
+        averageScore = totalScore / studentCount;
         return averageScore;
     }
 }
