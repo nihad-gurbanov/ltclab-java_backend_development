@@ -20,7 +20,7 @@ public class NicknameGenerator {
         }
 
         System.out.println("Your username is:");
-        nickname.append("-").append(lastname).append(birthYear.substring(2,4));
+        nickname.append("-").append(lastname).append(birthYear, 2, 4);
 
         System.out.println(nickname);
     }
