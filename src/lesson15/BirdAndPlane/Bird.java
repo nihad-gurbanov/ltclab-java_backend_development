@@ -1,4 +1,4 @@
-package lesson15.Interfaces.Segregation.BirdAndPlane;
+package lesson15.BirdAndPlane;
 
 public class Bird implements Animal, Flyable {
     String name;

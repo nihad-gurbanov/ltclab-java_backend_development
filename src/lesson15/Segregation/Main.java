@@ -1,4 +1,4 @@
-package lesson15.Interfaces.Segregation;
+package lesson15.Segregation;
 
 public class Main {
     public static void main(String[] args) {

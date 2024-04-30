@@ -1,4 +1,4 @@
-package lesson15.Interfaces.Segregation.BirdAndPlane;
+package lesson15.BirdAndPlane;
 
 public interface Transport {
     public String getCapacity();
