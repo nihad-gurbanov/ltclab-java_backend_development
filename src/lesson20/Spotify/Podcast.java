@@ -12,7 +12,7 @@ public class Podcast implements Playable{
 
     @Override
     public void getDetails() {
-
+        System.out.println("Title: " + title + "\nArtist: " + "\nDuration: " + duration );
     }
 
     @Override

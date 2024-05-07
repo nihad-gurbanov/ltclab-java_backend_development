@@ -13,7 +13,7 @@ public class Punk implements Music{
 
     @Override
     public void getDetails() {
-
+        System.out.println("Title: " + title + "\nArtist: " + artist + "\nDuration: " + duration );
     }
 
     @Override
