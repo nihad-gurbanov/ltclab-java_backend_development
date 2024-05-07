@@ -12,7 +12,6 @@ public class MyQueue {
         taskQueue.add("Watch Java Tutorials");
         taskQueue.add("Do some research");
 
-        int i = 0;
         while (!taskQueue.isEmpty()) {
             String element = taskQueue.poll();
             System.out.println(element);
