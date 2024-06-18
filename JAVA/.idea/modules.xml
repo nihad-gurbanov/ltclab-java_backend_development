@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaDMA.iml" filepath="$PROJECT_DIR$/JavaDMA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ltclab-java_backend_development.iml" filepath="$PROJECT_DIR$/ltclab-java_backend_development.iml" />
     </modules>
   </component>
 </project>
