@@ -32,7 +32,7 @@ public class PersonController {
 
         for (PersonDTO personDTO : persons) {
             if (personDTO.getId().equals(id)) {
-                persons.remove(personDTO);
+                persons.remove(personDTO); // removeIf alternative
                 return "Person deleted successfully";
             }
         }
