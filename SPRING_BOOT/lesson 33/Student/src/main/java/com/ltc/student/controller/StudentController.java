@@ -1,5 +1,6 @@
 package com.ltc.student.controller;
 
+import com.ltc.student.dto.StudentDto;
 import com.ltc.student.entity.Student;
 import com.ltc.student.service.StudentService;
 import lombok.AllArgsConstructor;
@@ -14,23 +15,23 @@ public class StudentController {
     private final StudentService studentService;
 
     @GetMapping("/")
-    public List<Student> getAllStudents() {
+    public List<StudentDto> getAllStudents() {
         return studentService.getAllStudents();
     }
 
     @GetMapping("/{id}")
-    public Student getStudentById(@PathVariable Long id) {
+    public StudentDto getStudentById(@PathVariable Long id) {
         return studentService.getStudentById(id);
     }
 
     @PostMapping("/")
-    public String create(@RequestBody Student student) {
+    public String create(@RequestBody StudentDto student) {
         studentService.addStudent(student);
         return "success";
     }
 
     @PutMapping("/{id}")
-    public String update(@PathVariable Long id, @RequestBody Student student) {
+    public String update(@PathVariable Long id, @RequestBody StudentDto student) {
         studentService.updateStudent(id, student);
         return "success";
     }
