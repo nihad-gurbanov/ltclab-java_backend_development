@@ -1,11 +1,11 @@
-package com.ltc.student.dto;
+package com.ltc.student.dto.request;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class StudentDto {
+public class StudentRequestDto {
     String firstName;
     String lastName;
     String email;
