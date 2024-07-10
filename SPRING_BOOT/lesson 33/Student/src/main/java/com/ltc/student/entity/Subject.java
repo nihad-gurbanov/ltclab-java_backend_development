@@ -1,10 +1,12 @@
 package com.ltc.student.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import java.util.List;
 
 @Entity
 @Table(name = "subject")
@@ -23,4 +25,8 @@ public class Subject {
     private String subjectWeight;
     @Column(name = "subject_description")
     private String subjectDescription;
+
+    @ManyToMany(mappedBy = "subjects", fetch = FetchType.LAZY)
+    @JsonIgnore
+    private List<Student> students;
 }
