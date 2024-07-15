@@ -12,6 +12,7 @@ import com.ltc.student.repository.StudentRepository;
 import com.ltc.student.repository.SubjectRepository;
 import com.ltc.student.repository.TeacherRepository;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +21,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
+@Slf4j
 public class StudentService {
     private final SubjectRepository subjectRepository;
     private final StudentRepository studentRepository;
@@ -28,6 +30,7 @@ public class StudentService {
     private final TeacherRepository teacherRepository;
 
     public List<StudentResponseDto> getAllStudents() {
+        log.info("Fetching all students");
         List<Student> students = studentRepository.findAll();
 
         return students.stream()
