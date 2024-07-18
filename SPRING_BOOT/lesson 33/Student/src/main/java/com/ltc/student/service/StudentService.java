@@ -45,6 +45,14 @@ public class StudentService {
         return modelMapper.map(student, StudentResponseDto.class);
     }
 
+    public StudentResponseDto getStudentByEmail(String email) {
+        Student student = studentRepository.findStudentByEmailNative(email).orElseThrow(
+                () -> new ResourceNotFoundException("Student not found with email: " + email)
+        );
+
+        return modelMapper.map(student, StudentResponseDto.class);
+    }
+
     public void addStudent(StudentRequestDto student) {
         Student newStudent = modelMapper.map(student, Student.class);
         ClassNo classNo = classNoRepository.findById(student.getClassId()).orElseThrow(

@@ -26,10 +26,10 @@ public class StudentController {
         return studentService.getStudentById(id);
     }
 
-//    @GetMapping("name/{name}")
-//    public StudentRequestDto getStudentByName(@PathVariable String name) {
-//        return studentService.getStudentByName(name);
-//    }
+    @GetMapping("email/")
+    public StudentResponseDto getStudentEmail(@RequestParam String email) {
+        return studentService.getStudentByEmail(email);
+    }
 
     @PostMapping("/add")
     public String create(@RequestBody StudentRequestDto student) {
