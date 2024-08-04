@@ -48,10 +48,10 @@ public class EmailService {
     }
 
 
-    @Scheduled(fixedRate = 5000)
-    public void checkIncomingEmails() {
-        log.info("Checking incoming emails");
-    }
+//    @Scheduled(fixedRate = 5000)
+//    public void checkIncomingEmails() {
+//        log.info("Checking incoming emails");
+//    }
 
     @Scheduled(cron = "0 0 12 ? * MON-FRI")
     public void sendProgressReport() {
